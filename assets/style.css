@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 1400px;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+:root {
+    --cor-branca: #fff;
+}
+
+.lading-page {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 3;
+    grid-area:
+        "titulo"
+        "descricao"
+        "btn-acesso";
+}
+
+.container {
+    background-image: url(./img/Header\ Background.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.container h1 {
+    font-family: 'Luckiest Guy', cursive;
+    letter-spacing: 3px;
+    color: var(--cor-branca);
+    width: 380px;
+    font-size: 56px;
+    Line-height: 56px;
+    text-align: center;
+    padding-top: 6%;
+    padding-bottom: 2%;
+}
+
+
+.container p {
+    color: var(--cor-branca);
+    text-align: center;
+    width: 55%;
+}
+
+.btn-acesso {
+    display: flex;
+    align-items: center;
+    width: 33%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.btn-claro:hover, .btn-escuro:hover{
+    cursor: pointer;
+
+}
+
+.btn-claro {
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 28px;
+    padding: 10px 20px;
+}
+
+.btn-escuro {
+    background: #23272A;
+    color: white;
+    border: none;
+    border-radius: 28px;
+    padding: 10px 20px;
+
+}
+
+.conteudo-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill 1, 1fr);
+    grid-template-rows: 1, 1fr;
+    grid-area:
+        "img-conteudo1" "texto-cont1";
+    width: 100%;
+    margin-left: 14%;
+
+}
+
+.cont-conteudo-1,
+.cont-conteudo-2,
+.cont-conteudo-3 {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+}
+
+.cont-conteudo-1 img,
+.cont-conteudo-2 img,
+.cont-conteudo-3 img {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.cont-conteudo-1 h1,
+.cont-conteudo-3 h1,
+.cont-conteudo-3 h1 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 54px;
+    width: 43%;
+    margin: 0;
+}
+
+.cont-conteudo-1 p,
+.cont-conteudo-3 p {
+    font-size: 1rem;
+    width: 44%;
+    margin: 0;
+    margin-top: 10px;
+
+}
+
+.conteudo-2 {
+    background-color: #F6F6F6;
+    display: grid;
+    grid-template-columns: repeat(auto-fill 1, 1fr);
+    grid-template-rows: 1, 1fr;
+    grid-area:
+        "img-conteudo2" "texto-cont2";
+}
+
+.cont-conteudo-2 {
+    padding-left: 100px;
+    margin-bottom: 30px;
+
+}
+
+.cont-conteudo-2 p {
+    font-size: 1rem;
+    width: 58%;
+    margin-top: 10px;
+}
+
+.cont-conteudo-2 h1 {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 54px;
+    width: 50%;
+    padding-top: 80px;
+    margin-left: 22%;
+}
+
+.cont-conteudo-2 img {
+    padding-right: 80px;
+}
+
+.conteudo-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill 1, 1fr);
+    grid-template-rows: 1, 1fr;
+    grid-area:
+        "img-conteudo3" "texto-cont3";
+    width: 100%;
+    margin-left: 14%;
+}
+
+.cont-conteudo-3 h1 {
+    padding-top: 80px;
+}
+
+.cont-conteudo-3 img {
+    margin-bottom: 80px;
+}
+
+.conteudo-4 {
+    background-color: #F6F6F6;
+    display: grid;
+    grid-template-columns: repeat(auto-fill 1, 1fr);
+    grid-template-rows: 2, 1fr;
+}
+
+.cont-conteudo-4 h1 {
+    font-family: 'Luckiest Guy', cursive;
+    color: black;
+    width: 40%;
+    font-size: 40px;
+    Line-height: 56px;
+    text-align: center;
+    padding-top: 6%;
+    padding-bottom: 2%;
+}
+
+.cont-conteudo-4 p {
+    text-align: center;
+    width: 56%;
+}
+
+.cont-conteudo-4 img {
+    align-items: center;
+    display: flex;
+}
+
+footer {
+    background-color: #23272A;
+    padding: 40px;
+}
+
+footer h1 {
+    margin-left: 0;
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-family: 'Luckiest Guy', cursive;
+    color: white;
+    letter-spacing: 5px;
+}
+
+footer img {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+}
+
+
+.logo {
+    display: flex;
+}
+
+
+@media screen and (max-width: 500px) {
+    .lading-page {
+        width: 100vw;
+        height: 60%;
+    }
+
+    .container {
+        background-image: url(./img/Header\ Background\ \(1\).png);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .container h1,
+    .container p,
+    .cont-conteudo-1 h1,
+    .cont-conteudo-1 p,
+    .cont-conteudo-2 h1,
+    .cont-conteudo-2 p,
+    .cont-conteudo-3 p,
+    .cont-conteudo-4 h1,
+    .cont-conteudo-4 p {
+        margin-left: 24px;
+    }
+
+    .container h1 {
+        font-family: 'Luckiest Guy', cursive;
+        color: var(--cor-branca);
+        width: 185px;
+        font-size: 32px;
+        text-align: justify;
+        Line-height: 32px;
+        letter-spacing: 0;
+    }
+
+    .container p {
+        color: var(--cor-branca);
+        text-align: justify;
+        width: 87%;
+        font-size: 1rem;
+        Line-height: 22px;
+
+    }
+
+    .btn-acesso {
+        flex-direction: column;
+        gap: 16px;
+        width: 100%;
+    }
+
+    .btn-acesso button {
+        width: 60%;
+    }
+
+    .conteudo-1,
+    .conteudo-3,
+    .conteudo-4{
+        margin: 0;
+    }
+
+    .cont-conteudo-1,
+    .cont-conteudo-3,
+    .cont-conteudo-4 {
+        flex-direction: column;
+    }
+
+    .cont-conteudo-1 h1,
+    .cont-conteudo-2 h1,
+    .cont-conteudo-3 h1{
+        font-size: 32px;
+        Line-height: 42px;
+        width: 90%;
+        margin-bottom: 24px;
+    }
+
+    .cont-conteudo-1 p {
+        font-size: 16px;
+        width: 90%;
+        margin-bottom: 44px;
+    }
+
+    .cont-conteudo-2 {
+        flex-direction: column-reverse;
+        padding: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    .cont-conteudo-2 img{
+        max-width: 100%;
+        height: auto;
+        margin-left: 44px;  
+    }
+
+    .cont-conteudo-2 h1,
+    .cont-conteudo-3 h1{
+        margin-left: 24px;
+        padding: 0;
+    }
+
+    .cont-conteudo-2 p,
+    .cont-conteudo-3 p,
+    .cont-conteudo-4 p {
+        font-size: 16px;
+        width: 85%;
+        margin-bottom: 44px;
+    }
+
+    .cont-conteudo-4 h1{
+        Line-height: 42px;
+        padding: 0;    
+        width: 430px;
+        margin: 0;
+        text-align: start;
+        letter-spacing: 2px;
+        font-size: 32px;
+        margin-left: 24px;
+        margin-bottom: 24px;
+        margin-top: 40px;
+    }
+
+    .cont-conteudo-4 p{
+        font-size: 16px;
+        text-align: justify;
+        width: 80%;
+    }
+
+    .cont-conteudo-4 img{
+        max-width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+    
+
+
+
+
+
+
+
+}
