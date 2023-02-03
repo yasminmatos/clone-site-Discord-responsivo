@@ -9,5 +9,7 @@
 ![6795c915-011e-4f97-999b-3633a3da3220](https://user-images.githubusercontent.com/93132290/216701818-605d036a-82d9-46e4-a524-0883c18ec7a1.gif)
 </div>
 
+<p> Por favor, ignore a qualidade da resolução. </p>
+
 <br>
 
